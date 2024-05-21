@@ -562,6 +562,7 @@ h3.my-profession
     padding: 30px 15px;
     text-align: center;
     transition: all 0.3s ease;
+    height: 340px;
 }
 .service .service-item .service-item-inner:hover
 {
@@ -609,6 +610,11 @@ h3.my-profession
     color: var(--text-black-700);
 }
 /* projects */
+.projects
+{
+    display: block;
+    justify-content: center;
+}
 .projects .projects-heading
 {
     flex: 0 0 100%;
@@ -619,6 +625,7 @@ h3.my-profession
 {
     color: var(--text-black-900);
     font-weight: 500;
+    margin-bottom: 15px;
 }
 .projects.container {
   margin-bottom: 40px;
@@ -637,13 +644,14 @@ h3.my-profession
 .projects-card {
   display: flex;
   flex-direction: column;
+  position: relative;
   align-items: center;
   padding: 20px;
-  font-size: 16px;
-  line-height: 15px;
+  font-size: 14px;
+  line-height: 16px;
   border-radius: 10px;
-  width: 250px;
-  height: fit-content;
+  width: 300px;
+  height: 350px;
   color: var(--text-black-700);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 10px;
@@ -681,6 +689,10 @@ h3.my-profession
   color: #fff;
   background-color: var(--skin-color);
   transition: background-color 0.2s;
+  margin-top: 30px;
+  /* position: fixed;
+  bottom: 20px;
+  left: 20px; */
 }
 
 .btn-learn-more:hover {
@@ -778,6 +790,18 @@ h3.my-profession
      height: 50px;
      padding: 0 50px;
 }
+.projects-card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-card-content h5,
+.projects-card-content p {
+  flex: 1;
+  margin: 0;
+}
+
 @media(max-width:1199px)
 {
     .aside
